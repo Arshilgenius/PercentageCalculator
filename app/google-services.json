@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "757554113383",
+    "firebase_url": "https://percentage-calculator-e96aa.firebaseio.com",
+    "project_id": "percentage-calculator-e96aa",
+    "storage_bucket": "percentage-calculator-e96aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757554113383:android:a5f0022256f00da4",
+        "android_client_info": {
+          "package_name": "com.arshilgenius.percentagecalculator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "757554113383-qo6rsivjbtg6vpnj8hv4rofka6ji3qaj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.arshilgenius.percentagecalculator",
+            "certificate_hash": "aec63b51cc0fd41e0cf4cec7b3993daa2856074d"
+          }
+        },
+        {
+          "client_id": "757554113383-f181pofdvsdqqcgco7mip176s0p2g0ve.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClcNds8i7XFW9SmULNrOh8ITW_cT3tNvs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "757554113383-f181pofdvsdqqcgco7mip176s0p2g0ve.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
