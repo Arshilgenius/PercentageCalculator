@@ -62,8 +62,9 @@ android:id="@+id/textView"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+
         android:text="Coded By Arshil   | Also visit https://zmf.000webhostapp.com/cpiter/"
-        android:layout_marginTop="140dp"
         android:textColor="#0689D8"
         />
 
