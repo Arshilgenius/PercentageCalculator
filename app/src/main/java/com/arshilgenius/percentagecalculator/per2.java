@@ -33,7 +33,7 @@ public class per2 extends AppCompatActivity {
 
 
         EditText text = (EditText) findViewById(R.id.calculate);
-        Double p = "".equals(text.getText().toString()) ? t : Float.parseFloat(text.getText().toString());
+        Double p = "".equals(text.getText().toString()) ? t : Double.parseDouble(text.getText().toString());
         Double r  = 0.5;
         Double result = p-r;
         result = result*10;
