@@ -24,7 +24,7 @@ android:textSize="20sp"
     android:textColorHint="#0689D8"
     android:textColor="#0689D8"
 android:gravity="center"
-android:layout_marginTop="40dp"
+android:layout_marginTop="30dp"
 android:id="@+id/calculate"
     />
 <Button
@@ -35,8 +35,9 @@ android:gravity="center"
 android:layout_marginLeft="140dp"
 android:background="#0689D8"
 android:textColor="@android:color/white"
-android:layout_marginTop="40dp"
+android:layout_marginTop="10dp"
 android:onClick="per1"
+android:id="@+id/b1"
 android:text="SUBMIT"/>
 <TextView
 android:layout_width="match_parent"
@@ -48,25 +49,28 @@ android:text=""
     android:textColor="#0689D8"
 android:id="@+id/textView"/>
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id">
-    </com.google.android.gms.ads.AdView>
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Coded By Arshil   | Also visit https://zmf.000webhostapp.com/cpiter/"
+            android:textColor="#0689D8" />
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            ads:adSize="BANNER"
+            android:layout_above="@id/one"
+            ads:adUnitId="@string/banner_ad_unit_id"/>
 
+    </RelativeLayout>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
-
-        android:text="Coded By Arshil   | Also visit https://zmf.000webhostapp.com/cpiter/"
-        android:textColor="#0689D8"
-        />
 
 
 </LinearLayout>

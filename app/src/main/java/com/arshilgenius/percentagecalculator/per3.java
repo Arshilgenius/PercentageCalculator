@@ -31,8 +31,7 @@ public class per3 extends AppCompatActivity{
     public void per3(View view) {
 
         EditText text = (EditText) findViewById(R.id.calculate);
-        String s = text.getText().toString();
-        Float p = Float.parseFloat(s);
+        Float p = "".equals(text.getText().toString()) ? 0 : Float.parseFloat(text.getText().toString());
         Float result = 19/2 * p;
         TextView view2 = (TextView) findViewById(R.id.textView);
         view2.setText(String.valueOf("% = " + result));

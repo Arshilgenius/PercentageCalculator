@@ -17,7 +17,7 @@ public class per2 extends AppCompatActivity {
 
     private AdView mAdView;
     private static final String TAG = "per2Activity";
-
+    Double t = 0.5;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +33,7 @@ public class per2 extends AppCompatActivity {
 
 
         EditText text = (EditText) findViewById(R.id.calculate);
-        String s = text.getText().toString();
-        Float p = Float.parseFloat(s);
+        Double p = "".equals(text.getText().toString()) ? t : Float.parseFloat(text.getText().toString());
         Double r  = 0.5;
         Double result = p-r;
         result = result*10;

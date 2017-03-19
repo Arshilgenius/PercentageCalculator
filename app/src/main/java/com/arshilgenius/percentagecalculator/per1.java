@@ -5,9 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
+
+import static android.widget.Toast.makeText;
 
 /**
  * Created by arshil on 3/18/2017.
@@ -17,6 +20,7 @@ public class per1 extends AppCompatActivity {
 
     private AdView mAdView;
     private static final String TAG = "per1Activity";
+
 
 
     @Override
@@ -35,15 +39,15 @@ public class per1 extends AppCompatActivity {
     public void per1(View view) {
 
         EditText text = (EditText) findViewById(R.id.calculate);
-        String s = text.getText().toString();
-        Float p = Float.parseFloat(s);
+        Float p = "".equals(text.getText().toString()) ? 1 : Float.parseFloat(text.getText().toString());
         Float result = 20 * p * p * p;
         result = result - 380 * p * p;
         result = result + 2725 * p;
-        result = result - 1690;
+        result = result - 1695;
         result = result / 84;
         TextView view2 = (TextView) findViewById(R.id.textView);
         view2.setText(String.valueOf("% = " + result));
 
     }
 }
+
