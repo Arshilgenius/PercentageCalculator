@@ -15,7 +15,6 @@ import com.google.android.gms.ads.AdView;
 
 public class per3 extends AppCompatActivity{
         private AdView mAdView;
-
         private static final String TAG = "per3Activity";
 
 
@@ -31,8 +30,8 @@ public class per3 extends AppCompatActivity{
     public void per3(View view) {
 
         EditText text = (EditText) findViewById(R.id.calculate);
-        Float p = "".equals(text.getText().toString()) ? 0 : Float.parseFloat(text.getText().toString());
-        Float result = 19/2 * p;
+        double p = "".equals(text.getText().toString()) ? 0 : Double.parseDouble(text.getText().toString());
+        Double result = p*9.5;
         TextView view2 = (TextView) findViewById(R.id.textView);
         view2.setText(String.valueOf("% = " + result));
 

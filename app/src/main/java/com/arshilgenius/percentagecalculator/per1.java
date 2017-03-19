@@ -39,11 +39,11 @@ public class per1 extends AppCompatActivity {
     public void per1(View view) {
 
         EditText text = (EditText) findViewById(R.id.calculate);
-        Float p = "".equals(text.getText().toString()) ? 1 : Float.parseFloat(text.getText().toString());
-        Float result = 20 * p * p * p;
+        Double p = "".equals(text.getText().toString()) ? 1 : Double.parseDouble(text.getText().toString());
+        Double result = 20 * p * p * p;
         result = result - 380 * p * p;
         result = result + 2725 * p;
-        result = result - 1695;
+        result = result - 1690;
         result = result / 84;
         TextView view2 = (TextView) findViewById(R.id.textView);
         view2.setText(String.valueOf("% = " + result));
